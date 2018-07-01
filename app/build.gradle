@@ -20,6 +20,9 @@ android {
             testCoverageEnabled true
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 coveralls {
     jacocoReportPath = "${buildDir}/reports/coverage/debug/report.xml"
