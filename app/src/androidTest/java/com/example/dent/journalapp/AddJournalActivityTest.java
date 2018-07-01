@@ -51,22 +51,11 @@ public class AddJournalActivityTest {
 
             onView(withId(R.id.add_button)).perform(click());
 
-//            onData(hasToString(startsWith("Sample")))
-//                    .inAdapterView(withId(R.id.tv_journal_title)).atPosition(1)
-//                    .check(matches(withText("Sample Title")));
-//
-//
             onView((withId(R.id.rv_journal_list)))
                             .check(matches(hasDescendant(withText("Sample Title"))));
 
             onView((withId(R.id.rv_journal_list)))
                     .check(matches(hasDescendant(withText("Sample Details"))));
-
-//            onData(hasToString(startsWith("Sample")))
-//                    .inAdapterView(withId(R.id.tv_journal_details)).atPosition(1)
-//                    .check(matches(withText("Sample Details")));
-//            onData(anything()).inAdapterView(withId(R.id.rv_journal_list)).atPosition(1).onChildView(withId(R.id.tv_journal_title)).check(matches(withText("Sample Title")));
-//            onData(anything()).inAdapterView(withId(R.id.rv_journal_list)).atPosition(1).onChildView(withId(R.id.tv_journal_details)).check(matches(withText("Sample Details")));
         }
 
         // Remember to unregister resources when not needed to avoid malfunction.
