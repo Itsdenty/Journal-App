@@ -26,10 +26,8 @@ gradlew can be used too by running the following command
 
 ### test coverage
 
-Coveralls was used as a third party service to analyse the test coverage you can check the report online via
+Coveralls was used as a third party service to analyse the test coverage you can check the report online [here](https://coveralls.io/github/Itsdenty/Journal-App)
 
-```     https://coveralls.io/github/Itsdenty/Journal-App
-```
 
 ## Deployment
 
@@ -37,7 +35,8 @@ Download the apk from here and install
 
 ## Built With
 
-* [Gradle]
+* [Gradle](https:/gradle.org)
+*[Java](https:www.java.com)
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 
@@ -47,7 +46,7 @@ I use [Github](http://github.com/) for versioning.
 
 ## Authors
 
-* **Abd-afeez Abd-hamid** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Abd-afeez Abd-hamid** 
 
 
 ## Acknowledgments
