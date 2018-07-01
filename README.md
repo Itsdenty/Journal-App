@@ -18,29 +18,17 @@ Git cloning this app or downloading the app and following the standard android a
 ## Running the tests
 
 The automated test can be run on android studio using a connected device.
-
-### Break down into end to end tests
-
-The test tests the ui functionality and the database functionality
+gradlew can be used too by running the following command
 
 ```
-        //Load the first entry in the database by id
-        JournalEntry jEntry = mDb.journalDao().loadJournalById(id);
-        String name = jEntry.getTitle();
-
-        //Test that it is actually the saved Journal that is returned
-        assertTrue("Test Journal" == "Test Journal");
+./gradlew connectedAndroidTest coveralls
 ```
 
-### And coding style tests
+### test coverage
 
-The test used the Esspresso ui test and junit for the database functionality test
+Coveralls was used as a third party service to analyse the test coverage you can check the report online via
 
-```     //click on the update button
-        onView(withId(R.id.update_button)).perform(click());
-        
-        //test that the update journal screen loads
-        onView(withId(R.id.activity_update)).check(matches((isDisplayed())));
+```     https://coveralls.io/github/Itsdenty/Journal-App
 ```
 
 ## Deployment
