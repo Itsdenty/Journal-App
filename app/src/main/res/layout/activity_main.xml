@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/paper"
+            android:scaleType="centerCrop"
+            android:tint="#8c000000"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:id="@+id/tv_journal_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:textSize="48sp"
+            android:textColor="#00C5F3"
+            android:text="@string/med_manager_title" />
+
+        <TextView
+            android:id="@+id/tv_journal_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_journal_app"
+            android:gravity="center_horizontal"
+            android:textSize="36sp"
+            android:layout_marginTop="48dp"
+            android:textColor="#00C5F3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/med_content" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_journal_complete"
+            android:scaleType="centerInside"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/for_med"
+            android:id="@+id/iv_journal_for"/>
+        <TextView
+            android:id="@+id/tv_journal_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_journal_for"
+            android:gravity="center_horizontal"
+            android:textSize="36sp"
+            android:layout_marginTop="36dp"
+            android:textColor="#00C5F3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/med_solution" />
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_alignBottom="@id/tv_journal_solution"
+            android:layout_marginBottom="-124dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/med_button"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_gplus"
+            android:padding="15dp"
+            android:onClick="signIn"/>
+    </RelativeLayout>
+</RelativeLayout>
+

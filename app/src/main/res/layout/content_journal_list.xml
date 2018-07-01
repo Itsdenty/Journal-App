@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_journal_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.dent.journalapp.JournalListActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lamp"
+        android:scaleType="centerCrop"
+        android:tint="#8c000000"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/my_toolbar2" layout="@layout/toolbar"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/this_month"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingTop="84dp"
+                    android:textColor="#00C5F3"
+                    android:id="@+id/tv_journal_header"/>
+                <TextView
+                    android:id="@+id/tv_empty_med_warn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_red_200"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:padding="48dp"
+                    android:text="There is currently no journal kindly add a new journal from the app drawer menu"
+                    android:visibility="gone"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_journal_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
