@@ -1,4 +1,4 @@
-# Project Title
+# App Journal
 
 My solution for the alc simple android journal. The app can be able to add view and edit journal entry by users and also allow them to access the app authenticated via their google credentials.
 
@@ -13,7 +13,7 @@ Aside internet and android studio and android studio emulator or an android devi
 
 ### Installing
 
-Git cloning this app or downloading the app and following the standard android app installation guied is sufficient.
+Git cloning this app or downloading the app and following the standard android app installation guide is sufficient.
 
 ## Running the tests
 
