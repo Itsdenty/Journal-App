@@ -35,8 +35,8 @@ Download the apk from here and install
 
 ## Built With
 
-* [Gradle](https:/gradle.org)
-*[Java](https:www.java.com)
+* [Gradle](https:/gradle.org) 
+* [Java](https:www.java.com)
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 
